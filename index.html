@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latte Lab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #501952;
+            color: white;
+            text-align: left;
+            display: flex;
+            justify-content: space-around;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #501952;
+            padding: 50px 0;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background-image: url('hero.webp');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+            height: 30rem;
+        }
+        .hero div {
+            padding: 6rem;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+        }
+        .section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .section h2 {
+            margin-bottom: 20px;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        .card h3 {
+            text-align: center;
+        }
+        .card {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            text-align: justify;
+        }
+        footer {
+            background-color: #501952;
+            color: #ddd;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+        }
+        footer a {
+            color: #c1a1d3;
+            text-decoration: none;
+        }
+        #about {
+            background-color: #501952;
+        }
+        #about div{
+            width: 50%;
+            margin: auto;
+            text-align: justify;
+            color: #ddd;
+        }
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            nav {
+                flex-wrap: wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.jpg" alt="" style="height: 100px; width: 150px;">
+        <nav>
+            <a href="#">Home</a>
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <div>
+        <h1>Welcome to Latte Lab</h1>
+        <p>Where Cultural Deserts Meet Affordable Delights</p>
+        </div>
+    </section>
+    
+    <section class="section" id="services">
+        <h2>Services</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Cultural Coffee Blends</h3>
+                <p>Discover a fusion of cultures through our carefully curated coffee blends, inspired by flavors from around the world. Each cup is crafted to bring a unique cultural experience to your taste buds.</p>
+            </div>
+            <div class="card">
+                <h3>Student Discounts</h3>
+                <p>We value students! Enjoy exclusive discounts on all our offerings, making it easier to fuel your study sessions and social gatherings without stretching your budget.</p>
+            </div>
+            <div class="card">
+                <h3>Pastries and Light Meals</h3>
+                <p>Pair your coffee with a delightful range of freshly baked pastries, healthy snacks, and light meals. Whether you're craving something sweet or savory, we have you covered.</p>
+            </div>
+            <div class="card">
+                <h3>Interactive Study Spaces</h3>
+                <p>Explore our 2D and 3D study areas designed to inspire creativity and productivity. With quiet zones, charging stations, and comfortable seating, we create the perfect environment for learning.</p>
+            </div>
+            <div class="card">
+                <h3>Community Events</h3>
+                <p>Join us for regular events featuring local artists, musicians, and cultural activities. We bring the community together in a welcoming and vibrant space.</p>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="about">
+        <div>
+        <h2>About Us</h2>
+        <p>Latte Lab is more than just a café; it is a hub designed to enrich the lives of students in every possible way. Situated with proximity to campuses and student housing, we provide a vibrant yet cozy environment tailored for both introverts and extroverts. From our unique cultural coffee blends and affordable pricing to our 2D and 3D study areas, we aim to inspire productivity and connection.
+        At Latte Lab, you’ll find language lessons, community events featuring local artists and musicians, and healthier, student-focused menu options. Our mobile app and loyalty program enhance the experience by allowing you to track study hours, earn rewards, and discover exclusive deals. Latte Lab is where culture, creativity, and community come together to redefine the café experience.</p>
+        </div>
+    </section>
+    
+    <section class="section" id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: info@lattelab.com</p>
+        <p>Address: Wilhemsburg, Hamburg, Germany</p>
+    </section>
+    <footer>
+        <p>&copy; 2025 Latte Lab | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
